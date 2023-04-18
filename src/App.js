@@ -20,6 +20,14 @@ export default function App() {
             rel="noreferrer"
           >
             Franziska Schallhorn
+          </a>{" "}
+          and is{" "}
+          <a
+            href="https://github.com/Franzi1005/shecodes_dictionary"
+            target="_blank"
+            rel="noreferrer"
+          >
+            open-sourced on Github
           </a>
         </footer>
       </div>
