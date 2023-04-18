@@ -1,0 +1,12 @@
+.Dictionary form {
+  margin: 20px;
+}
+
+.Dictionary input {
+  max-width: 60%;
+  margin: 6px;
+}
+
+.btn {
+  padding: 3px 10px;
+}
