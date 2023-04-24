@@ -1,0 +1,7 @@
+.Results {
+  margin: 20px;
+  padding: 20px;
+  border-color: rgba(0, 0, 0, 0.2);
+  border: solid 1px;
+  border-radius: 6px;
+}
