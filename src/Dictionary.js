@@ -5,12 +5,13 @@ import Results from "./Results";
 
 export default function Dictionary() {
   const [keyword, setKeyword] = useState("");
-  const [result, setResult] = useState({});
+  const [result, setResult] = useState({ answer: false });
   let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${keyword}`;
 
   function handleResponse(response) {
     console.log(response.data);
     setResult({
+      answer: true,
       wordKind: response.data[0].meanings[0].partOfSpeech,
       word: response.data[0].word,
       meaning: response.data[0].meanings[0].definitions[0].definition,
