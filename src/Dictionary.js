@@ -9,8 +9,8 @@ export default function Dictionary() {
   let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${keyword}`;
 
   function handleResponse(response) {
-    console.log(response.data);
     setResult(response.data);
+    console.log(response);
   }
 
   function handleSubmit(event) {
