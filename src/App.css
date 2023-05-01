@@ -1,3 +1,15 @@
+.App {
+  font-family: "Courier New", Courier, monospace;
+  padding: 30px;
+  background-color: #e0ebeb;
+}
+
 .App h1 {
   margin-top: 20px;
+  font-weight: 650;
+}
+h1,
+footer {
+  text-align: center;
+  margin: 20px;
 }

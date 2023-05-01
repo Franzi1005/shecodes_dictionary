@@ -1,0 +1,21 @@
+i {
+  font-weight: 600;
+  font-size: 22px;
+}
+
+.definition {
+  font-size: 18px;
+  margin: 15px 0px;
+}
+
+.Synonyms {
+  display: inline-block;
+  margin-right: 12px;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.4);
+  font-weight: bold;
+  border: solid 1px rgba(0, 0, 0, 0.4);
+  border-radius: 20px;
+  padding: 2px 8px;
+  margin: 10px;
+}

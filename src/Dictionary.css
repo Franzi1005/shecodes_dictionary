@@ -1,12 +1,22 @@
+.Dictionary {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 10px;
+}
+
 .Dictionary form {
   margin: 20px;
+  font-family: "Courier New", Courier, monospace;
 }
 
 .Dictionary input {
-  max-width: 60%;
-  margin: 6px;
+  margin: 10px;
 }
-
 .btn {
   padding: 3px 10px;
+}
+
+h3 {
+  font-weight: bold;
+  font-size: 36px;
 }
