@@ -7,15 +7,17 @@ import Photos from "./Photos";
 export default function Dictionary() {
   const [keyword, setKeyword] = useState("");
   const [result, setResult] = useState();
+  const [photos, setPhotos] = useState(null);
   let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${keyword}`;
   let pexelsApiKey = "vnnWF5KQ0ER4VJIX8Xpv7ixW1sJIXQ9bSRhvZSIHtufrVSaIhHZ5Gs6H";
-  let pexelsApiUrl = `https://api.pexels.com/v1/search?query=${keyword}&per_page=1`;
+  let pexelsApiUrl = `https://api.pexels.com/v1/search?query=${keyword}&per_page=6`;
 
   function handleResponse(response) {
     setResult(response.data);
   }
 
   function handlePexelsResponse(response) {
+    setPhotos(response.data.photos);
     console.log(response);
   }
 
@@ -46,7 +48,7 @@ export default function Dictionary() {
         <input type="submit" className="btn btn-primary" value="Search"></input>
       </form>{" "}
       <Results data={result} />
-      <Photos />
+      <Photos photos={photos} />
     </div>
   );
 }

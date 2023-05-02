@@ -1,0 +1,13 @@
+.Photos img {
+  max-width: 260px;
+  margin: 10px;
+  border-radius: 6px;
+  display: inline-block;
+}
+
+.small-pic:hover {
+  transform: scale(1.1);
+  transition: 200ms ease-in-out;
+  filter: contrast(60%);
+  cursor: pointer;
+}
