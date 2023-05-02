@@ -16,7 +16,7 @@ export default function Photos(props) {
                   rel="noreferrer"
                 >
                   <img
-                    alt="picture-result"
+                    alt="search-result"
                     src={photo.src.landscape}
                     className="img-fluid small-pic"
                   ></img>
